@@ -1,0 +1,585 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Roboto+Mono:wght@500&family=Ubuntu&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  background-repeat: repeat;
+  background-position: center center;
+  background-size: auto;
+  background-attachment: scroll;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Mono", monospace;
+  font-family: "Ubuntu", sans-serif;
+}
+
+button.normal {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 30px 30px;
+  color: #000;
+  background-color: #fbbc05;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.2s;
+}
+
+/* header */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  height: 80px;
+  z-index: 999;
+  /* position: sticky; */
+  top: 0;
+  left: 0;
+}
+
+#header img {
+  height: 100px;
+  width: auto;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  margin-top: 14px;
+  position: relative;
+}
+
+#navbar li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  /* color: #1a1a1a; */
+  transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: #fbbc05;
+}
+
+#mobile {
+  display: none;
+  align-items: center;
+}
+
+#close {
+  display: none;
+}
+
+#hero {
+  background-image: url(../Img/banner1.jpg);
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top 15% right 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero h1 {
+  font-size: 120px;
+  line-height: 120px;
+  font-weight: 800;
+}
+
+/* services */
+#services {
+  padding: 80px 0;
+}
+
+#services .title h6 {
+  color: #fbbc05;
+  margin: 0;
+}
+
+#services .title p {
+  font-weight: 800;
+}
+
+#services .card {
+  height: 80vh;
+  padding: 30px;
+  background: #0a0a0a;
+  border: 1px solid #232020b1;
+}
+
+#services .card:hover {
+  background-color: #fbbc05;
+}
+
+#services .card-title {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+#services .card-sub-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 20px 0 30px;
+}
+
+#services .card-title::after {
+  content: "";
+  width: 18%;
+  height: 5px;
+  background: #fff;
+  position: absolute;
+  top: 230px;
+  left: 45px;
+}
+
+#services .card-text {
+  font-size: 15px;
+  margin: 90px 0 30px;
+}
+
+/* about-us */
+#about-us {
+  padding: 80px 0;
+}
+
+#about-us .about-title {
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#about-us .about-title .about-link {
+  margin-top: 28px;
+}
+
+#about-us button:hover {
+  background-color: #e4b824;
+}
+
+#about-us .about-title .about-link a i {
+  color: #fff;
+  font-size: 14px;
+}
+
+#about-us .about-title h1 {
+  font-size: 96px;
+  font-weight: 700;
+}
+
+#about-us .title h6 {
+  color: #fbbc05;
+  margin: 0;
+}
+
+#about-us .title p {
+  font-weight: 800;
+}
+
+#about-us .card {
+  background: #0a0a0a;
+  padding: 30px;
+  border: 1px solid #232020b1;
+  margin-right: -30px;
+}
+
+#about-us #card {
+  margin-left: -30px;
+}
+
+#about-us .card .card-index {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+#about-us .card .card-title {
+  font-weight: 700;
+  margin-top: -8px;
+}
+
+#about-us .card .card-text {
+  margin-top: 25px;
+  font-size: 15px;
+}
+
+#about-us .about-img img {
+  width: 100%;
+  height: 235px;
+}
+
+/* gallery */
+#gallery {
+  padding: 80px 0;
+}
+
+#about-us {
+  padding: 80px 0;
+}
+
+#gallery .gallery-title {
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#gallery .gallery-title .gallery-link {
+  margin-top: 28px;
+}
+
+#gallery button:hover {
+  background-color: #e4b824;
+}
+
+#gallery .gallery-title h1 {
+  font-size: 96px;
+  font-weight: 700;
+}
+
+#gallery .header h6 {
+  color: #fbbc05;
+  margin: 0;
+}
+
+#about-us .header p {
+  font-weight: 800;
+}
+
+#gallery {
+  padding: 80px 0;
+}
+
+#gallery .row {
+  display: flex;
+  max-width: 100%;
+}
+
+.column {
+  width: 420px;
+  padding: 0;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+  transition: ease-in 0.3s;
+}
+
+/* feat */
+#feat {
+  padding: 80px 0;
+}
+
+#feat .feat-title {
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#feat .feat-title .feat-link {
+  margin-top: 28px;
+}
+
+#feat button:hover {
+  background-color: #e4b824;
+}
+
+#feat .feat-title h1 {
+  font-size: 96px;
+  font-weight: 700;
+}
+
+#feat .header h6 {
+  color: #fbbc05;
+  margin: 0;
+}
+
+#feat .header p {
+  font-weight: 800;
+}
+
+#feat .feat-text .topic h3 {
+  padding-bottom: 40px;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+#feat .feat-text h2 {
+  font-weight: 700;
+  line-height: 45px;
+  margin-right: 30px;
+}
+
+#feat .feat-text p {
+  font-size: 14px;
+}
+
+/* clients */
+#clients {
+  padding: 80px 0;
+}
+
+#clients .clients-title {
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#clients .clients-title .clients-link {
+  margin-top: 28px;
+}
+
+#clients button:hover {
+  background-color: #e4b824;
+}
+
+#clients .clients-title h1 {
+  font-size: 96px;
+  font-weight: 700;
+}
+
+#clients .header h6 {
+  color: #fbbc05;
+  margin: 0;
+}
+
+#clients .header p {
+  font-weight: 800;
+}
+
+#clients .logo img {
+  height: auto;
+  width: 60%;
+  padding: 50px 0;
+  mix-blend-mode: exclusion;
+}
+
+/* footer */
+footer {
+  padding: 80px 0;
+  height: 60vh;
+}
+
+footer h5 {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+footer h1 {
+  font-size: 96px;
+  font-weight: 700;
+}
+
+footer .footer-icons {
+  margin-top: 18px;
+  margin-bottom: 100px;
+}
+
+footer .footer-icons a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 10px;
+}
+
+footer .footer-icons a:hover {
+  color: #fbbc05;
+}
+
+footer .footer-icons i {
+  margin-right: 8px;
+}
+
+footer .footer-lines p {
+  margin: 0;
+  font-weight: 500;
+}
+
+footer h3 {
+  margin-top: 30px;
+  font-weight: 800;
+  line-height: 20px;
+  font-weight: 40px;
+}
+
+footer .copyright {
+  padding: 80px 0 30px 0;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 799px) {
+  /* HOME-PAGE */
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 90vh;
+    width: 300px;
+    background: #373535;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    padding: 80px 0 0 10px;
+    transition: 0.3s;
+  }
+
+  #navbar.active {
+    right: 0px;
+  }
+
+  #navbar li {
+    margin-bottom: 25px;
+  }
+
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
+
+  #mobile i {
+    color: #fff;
+    font-size: 24px;
+    padding-left: 20px;
+  }
+
+  #close {
+    display: initial;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #fff;
+    font-size: 24px;
+  }
+
+  #navbar li i {
+    display: none;
+  }
+
+  #hero {
+    height: 70vh;
+    padding: 0 80px;
+    background-position: top 30% right 30%;
+  }
+
+  #hero h1 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  /* services */
+  #services {
+    margin-top: -130px;
+  }
+
+  #services .card {
+    height: 80vh;
+    width: 100%;
+    margin-left: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  /* about-us*/
+  #about-us,
+  #gallery,
+  #feat,
+  #clients {
+    padding: 40px 0;
+  }
+
+  #about-us .about-title,
+  #gallery .gallery-title,
+  #feat .feat-title,
+  #clients .clients-title {
+    margin-bottom: 40px;
+  }
+
+  #about-us .about-title .about-link,
+  #feat .feat-title .feat-link,
+  #gallery .gallery-title .gallery-link,
+  #clients .clients-title .clients-link {
+    margin-top: 13px;
+  }
+
+  #about-us .about-title h1,
+  #gallery .gallery-title h1,
+  #feat .feat-title h1,
+  #clients .clients-title h1 {
+    font-size: 36px;
+  }
+
+  #about-us .card {
+    margin-right: 5px;
+  }
+
+  #about-us #card {
+    margin: 0;
+  }
+
+  #about-us .about-img img {
+    width: 100%;
+    margin-right: 5px;
+  }
+
+  /* gallery */
+
+  #gallery .row {
+    display: flex;
+  }
+
+  .column {
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  .photo img {
+    width: 100%;
+    height: 350px;
+  }
+
+  /* feat */
+  #feat .feat-text {
+    justify-content: center;
+    width: 120%;
+  }
+
+  #feat .feat-text .topic h3 {
+    font-size: 28px;
+  }
+
+  /* clients */
+  #clients .logo img {
+    width: 90%;
+    margin: 0 50px;
+  }
+  /* 
+  footer */
+  footer h1 {
+    font-size: 36px;
+  }
+
+  footer .footer-icons {
+    margin-top: 18px;
+    margin-bottom: 30px;
+  }
+
+  footer .copyright {
+    justify-content: center;
+    text-align: center;
+  }
+}
