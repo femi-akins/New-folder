@@ -491,6 +491,102 @@ footer .copyright {
     url(../Img/Banner4.jpg);
 }
 
+#case {
+  padding: 80px 0;
+}
+
+#case .case-title h1 {
+  font-size: 96px;
+  font-weight: 700;
+  margin-bottom: 70px;
+}
+
+#case .title h6 {
+  color: #fbbc05;
+  margin: 0;
+}
+
+#case .title p {
+  font-weight: 800;
+}
+
+#case .card {
+  padding: 30px;
+  border: 1px solid #232020b1;
+  height: 100%;
+  cursor: pointer;
+  background-position: top 50% right 50%;
+}
+
+#case #card1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+    url(../Img/Banner1.jpg);
+  margin-right: -20px;
+}
+
+#case #card2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+    url(../Img/Banner3.jpg);
+  margin-left: -20px;
+}
+
+#case #card3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+    url(../Img/Banner4.jpg);
+  margin-right: -20px;
+}
+
+#case #card4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+    url(../Img/Banner5.jpg);
+  margin-left: -20px;
+}
+
+#case #card1:hover,
+#case #card2:hover,
+#case #card3:hover,
+#case #card4:hover {
+  opacity: 0.9;
+  background-image: linear-gradient(
+      rgba(251, 188, 5, 0.6),
+      rgba(251, 188, 5, 0.6)
+    ),
+    url(../Img/Banner1.jpg);
+}
+
+#case .card .card-body {
+  position: absolute;
+  bottom: 0;
+}
+
+#case .card .card-body p {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+#case .card .card-body i {
+  font-size: 20px;
+}
+
+#case .case-logo {
+  height: 300px;
+  width: 100%;
+  border: 1px solid #232020b1;
+  position: relative;
+}
+
+#case .case-logo img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 799px) {
   /* This is the media query for the "HomePage" */
@@ -592,8 +688,15 @@ footer .copyright {
   #about-us .about-title h1,
   #gallery .gallery-title h1,
   #feat .feat-title h1,
-  #clients .clients-title h1 {
+  #clients .clients-title h1,
+  #features .features-title h1 {
     font-size: 36px;
+  }
+
+  #about-us #column2,
+  #case #column2 {
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   #about-us .card {
@@ -657,10 +760,6 @@ footer .copyright {
 
   /* This is the media query for the "What we do Page" */
   /* FEATURES PAGE */
-  #features .features-title h1 {
-    font-size: 36px;
-  }
-
   #features .card {
     width: 100%;
     height: 100%;
@@ -668,5 +767,33 @@ footer .copyright {
 
   #features #card-right {
     height: 100%;
+  }
+
+  /* This is the media query for the "What we do Page" */
+  /* CASE PAGE */
+  #case .case-title h1 {
+    font-size: 36px;
+  }
+
+  #case .card {
+    height: 250px;
+    width: 100%;
+  }
+
+  #case #card1,
+  #case #card2,
+  #case #card3,
+  #case #card4 {
+    margin: 0;
+  }
+
+  #case .case-logo {
+    height: 200px;
+    width: 100%;
+  }
+
+  #case .case-logo img {
+    max-width: 50%;
+    max-height: 50%;
   }
 }
