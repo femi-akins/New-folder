@@ -844,7 +844,7 @@ form {
   }
 
   #services .card {
-    height: 80vh;
+    height: 60vh;
     width: 100%;
     margin-left: 40px;
     margin-top: 0;
@@ -889,15 +889,17 @@ form {
   }
 
   #about-us .card {
-    padding: 18px;
+    padding: 15px;
+    height: 317px;
   }
 
   #about-us #card {
     margin-top: 0;
+    height: 335px;
   }
 
   #about-us .about-img img {
-    width: 100%;
+    width: 97%;
     margin-right: 5px;
   }
 
