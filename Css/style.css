@@ -846,7 +846,7 @@ form {
   #services .card {
     height: 60vh;
     width: 100%;
-    margin-left: 40px;
+    margin-left: 25px;
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -889,17 +889,20 @@ form {
   }
 
   #about-us .card {
-    padding: 15px;
+    padding: 13px;
     height: 317px;
+    width: 100%;
   }
 
   #about-us #card {
-    margin-top: 0;
+    margin: 0;
     height: 335px;
+    padding: 0 12px;
+    width: 100%;
   }
 
   #about-us .about-img img {
-    width: 97%;
+    width: 100%;
     margin-right: 5px;
   }
 
@@ -916,6 +919,7 @@ form {
   .photo img {
     width: 100%;
     height: 350px;
+    object-fit: cover;
   }
 
   /* feat */
