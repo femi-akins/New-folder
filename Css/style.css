@@ -281,6 +281,7 @@ button.normal {
   transition: ease-in 0.3s;
   opacity: 0.4;
   cursor: pointer;
+  object-fit: cover;
 }
 
 .photo img:hover {
@@ -479,20 +480,6 @@ footer .copyright {
   font-size: 15px;
 }
 
-#features #card-right {
-  background: #fbbc05;
-  height: 213px;
-  border: none;
-}
-
-#features #card-right ul {
-  list-style: none;
-}
-
-#features #card-right ul li i {
-  margin-right: 10px;
-}
-
 /* CASE STUDIES PAGE */
 #hero.case-header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
@@ -530,6 +517,7 @@ footer .copyright {
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
     url(../Img/Banner1.jpg);
   margin-right: -20px;
+  object-fit: cover;
 }
 
 #case #card2 {
@@ -957,10 +945,6 @@ form {
   /* FEATURES PAGE */
   #features .card {
     width: 100%;
-    height: 100%;
-  }
-
-  #features #card-right {
     height: 100%;
   }
 
