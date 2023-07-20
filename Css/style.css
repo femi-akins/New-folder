@@ -85,7 +85,7 @@ button.normal {
 }
 
 #hero {
-  background-image: url(../Img/banner1.jpg);
+  background-image: url(../Img/homepage-image.jpeg);
   height: 90vh;
   width: 100%;
   background-size: cover;
@@ -515,26 +515,26 @@ footer .copyright {
 
 #case #card1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
-    url(../Img/Banner1.jpg);
+    url(../Img/Case\ Trifecta.png);
   margin-right: -20px;
   object-fit: cover;
 }
 
 #case #card2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
-    url(../Img/Banner3.jpg);
+    url(../Img/Case\ TPRCC.png);
   margin-left: -20px;
 }
 
 #case #card3 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
-    url(../Img/Banner4.jpg);
+    url(../Img/Case\ Salberg.png);
   margin-right: -20px;
 }
 
 #case #card4 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
-    url(../Img/Banner5.jpg);
+    url(../Img/Case\ Eagle.png);
   margin-left: -20px;
 }
 
