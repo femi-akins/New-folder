@@ -831,6 +831,11 @@ form {
     margin-top: -130px;
   }
 
+  #services .card-group {
+    display: flex;
+    flex-direction: column;
+  }
+
   #services .card {
     height: 60vh;
     width: 100%;
@@ -997,3 +1002,5 @@ form {
     width: 9%;
   }
 }
+
+@media (max-width: 477px);
