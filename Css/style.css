@@ -46,6 +46,11 @@ button.normal {
 #header img {
   height: 100px;
   width: auto;
+  -webkit-transition: -webkit-transform 5s;
+}
+
+#header img:hover {
+  -webkit-transform: rotate(-360deg) translateX(0);
 }
 
 #navbar {
@@ -769,6 +774,11 @@ form {
 @media (max-width: 799px) {
   /* This is the media query for the "HomePage" */
   /* HOME-PAGE */
+
+  #header img {
+    margin-left: -70px;
+  }
+
   #navbar {
     display: flex;
     flex-direction: column;
@@ -802,6 +812,7 @@ form {
     color: #fff;
     font-size: 24px;
     padding-left: 20px;
+    margin-right: -40px;
   }
 
   #close {
