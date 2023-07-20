@@ -85,7 +85,8 @@ button.normal {
 }
 
 #hero {
-  background-image: url(../Img/homepage-image.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+    url(../Img/homepage-image.jpeg);
   height: 90vh;
   width: 100%;
   background-size: cover;
@@ -117,7 +118,7 @@ button.normal {
 }
 
 #services .card {
-  height: 80vh;
+  height: 75vh;
   padding: 20px;
   background: #0a0a0a;
   border: 1px solid #232020b1;
@@ -374,7 +375,7 @@ button.normal {
   height: auto;
   width: 60%;
   padding: 50px 0;
-  mix-blend-mode: exclusion;
+  mix-blend-mode: luminosity;
 }
 
 /* footer */
@@ -515,26 +516,26 @@ footer .copyright {
 
 #case #card1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
-    url(../Img/Case\ Trifecta.png);
+    url(../Img/banner4.jpg);
   margin-right: -20px;
   object-fit: cover;
 }
 
 #case #card2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
-    url(../Img/Case\ TPRCC.png);
+    url(../Img/Banner3.jpg);
   margin-left: -20px;
 }
 
 #case #card3 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
-    url(../Img/Case\ Salberg.png);
+    url(../Img/Banner2.jpg);
   margin-right: -20px;
 }
 
 #case #card4 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
-    url(../Img/Case\ Eagle.png);
+    url(../Img/Banner5.jpg);
   margin-left: -20px;
 }
 
@@ -602,6 +603,7 @@ footer .copyright {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  mix-blend-mode: luminosity;
 }
 
 /* ABOUT PAGE */
@@ -837,7 +839,7 @@ form {
   }
 
   #services .card {
-    height: 60vh;
+    height: 50vh;
     width: 100%;
     margin-left: 25px;
     margin-top: 0;
@@ -1003,4 +1005,4 @@ form {
   }
 }
 
-@media (max-width: 477px);
+/* @media (max-width: 477px); */
